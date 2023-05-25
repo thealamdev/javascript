@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript datatypes</title>
+</head>
+<body>
+    
+    <script>
+
+        // number
+
+         let x = 8;
+         let y = 5.9;
+
+         console.log(x);
+         console.log(y);
+
+
+        //  string
+         let name = "John deo";
+         console.log(name);
+
+
+        //  object
+
+         let object = {
+            name:"Shahalam",
+            age: 21,
+            department: "CSE",
+        };
+
+        console.log(typeof object.age)
+
+        // array
+
+        let array = [
+            1,2,3,4,"news",
+        ];
+
+        console.log(array[4]);
+
+        // boolean
+
+        let real = true;
+        let notreal = false;
+
+        console.log(real);
+        console.log(notreal);
+
+
+        // date
+
+        const date = new Date();
+        console.log(date);
+
+        //  javscript string:
+
+        let firstName = " i'm Shah alam";
+        let lastName = 'i"am doing it';
+        console.log(firstName);
+        console.log(lastName);
+
+        //Exponential Notation
+
+        let num1 = 124e5;
+        let num2 = 124e-5;
+        console.log(num1);
+        console.log(num2);
+
+        // BigInt
+
+        let bigNumber = BigInt("123456789012345678901234567890");
+        console.log(bigNumber);
+        console.log(typeof bigNumber);
+
+        // booleans again:
+        let x1 = 10;
+        let x2 = 10;
+        let x3 = 20;
+
+         
+        console.log((x1 == x2 != x3));
+
+        // undefined 
+
+        let cars;
+
+        console.log(typeof cars);
+    </script>
+</body>
+</html>

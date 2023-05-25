@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript function</title>
+</head>
+
+<body>
+
+
+    <script>
+        function myFunction() {
+            console.log('Hello world !!');
+        }
+        myFunction();
+
+
+        // parameter funtion: 
+
+        function sleep(name, time) {
+            console.log(name + " sleep at " + time + " o'clock");
+        }
+
+        sleep("Shah alam", 10)
+        sleep("Shah", 12)
+        sleep("alam", 14)
+        sleep("Shah khan", 20)
+        sleep("Sajjat", 4)
+        console.log(typeof sleep);
+
+
+        // return funtion:
+
+        function sum(x, y) {
+            return x + y;
+        }
+
+
+        let x = sum(23, 56);
+        console.log(x);
+
+
+        // return funcion and calculate value:
+
+        function multiply(n1, n2) {
+            return n1 * n2;
+        }
+
+        let multi = multiply(2, 5);
+        console.log(multi);
+
+        // temperature convert:
+
+        function temperature(F) {
+            return (5 / 9) * (F - 32);
+        }
+
+        let tmp = temperature(77);
+        console.log(tmp);
+
+        function toCelsius(fahrenheit) {
+            return (5 / 9) * (fahrenheit - 32);
+        }
+
+        let value = toCelsius;
+        console.log(value)
+
+        console.log("the temperature is " + toCelsius(77))
+    </script>
+</body>
+
+</html>

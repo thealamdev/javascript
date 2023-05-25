@@ -1,0 +1,20 @@
+javascript has 8 datatypes.
+
+1. number
+2. string
+3. undefined
+4. null
+5. boolean
+6. symbol
+7. bigint
+8. object
+
+Object datatypes can contain 
+
+1. an object
+2. an array
+3. a date
+
+------------ javascript types are dynamic ----------
+
+it means, in javascript same variable hold different types of data. 

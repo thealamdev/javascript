@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Class</title>
+    <style>
+        .banner_item {
+            width: 25%;
+            height: 200px;
+            background: red;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px gray;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .add_style {
+            background: #776565;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px gray;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="image" src="https://www.w3schools.com/js/pic_bulbon.gif" alt="" width="100px">
+
+    <div class="banner_container">
+        <div class="banner_item">
+            banner 1
+        </div>
+         <div class="div" style="margin-top:20px">
+            <button id="btn">Add</button>
+        <button id="hide">Hide</button>
+         </div>
+    </div>
+
+    <script>
+        var image = document.getElementById('image');
+        image.addEventListener('click', function () {
+            image.src = "https://www.w3schools.com/js/pic_bulboff.gif"
+        })
+
+        if (image.src = "https://www.w3schools.com/js/pic_bulboff.gif") {
+            image.src = "https://www.w3schools.com/js/pic_bulbon.gif"
+        }
+
+        var btn = document.querySelector('#btn');
+        var banner_item = document.querySelector('.banner_item');
+        var hide = document.querySelector('#hide');
+
+        btn.addEventListener('click', function () {
+            if (banner_item.classList.contains('add_style')) {
+                banner_item.classList.remove('add_style');
+            } else {
+                banner_item.classList.add('add_style');
+            }
+        });
+
+        // var x = 100;
+        // if (true) {
+        //     var x = 10;
+        //     console.log(x);
+        // }
+
+        // if (true) {
+        //     var x = 20;
+        //     console.log(x);
+        // }
+        // if (true) {
+        //     var x = 30;
+        //     console.log(x);
+        // }
+        // if (true) {
+        //     var x = 40;
+        //     console.log(x);
+        // }
+        // if (true) {
+        //     var x = 50;
+        //     console.log(x);
+        // }
+
+ 
+        let x =10;
+        x=20;
+        console.log(x)
+    </script>
+</body>
+
+</html>
