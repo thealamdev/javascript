@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript string search</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        .rod{
+            width: 100%;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <table>
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Actions</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script>
+        let text = "this is shah alam.i am from city university this this";
+        console.log(text.indexOf("am"));
+        console.log(text.lastIndexOf("this"));
+
+        let html = `<tr class="rod">
+                        <td>One</td>
+                        <td>One</td>
+                        <td>One</td>
+                        <td>One</td
+                     </tr>`
+        // console.log(html);
+        document.querySelector('tbody').innerHTML = html;
+    </script>
+</body>
+
+</html>
