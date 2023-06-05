@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Number</title> 
+</head>
+<body>
+    
+
+
+    <script>
+        let x = 10;
+        let y = 20;
+        let sum = x+y;
+        console.log(typeof sum)
+
+        //we can write number with or without decimals:
+        let deci = 20.13;
+        let withoutDeci = 20;
+        console.log(typeof deci)
+        console.log(typeof withoutDeci)
+
+        // so we can say that in javascript we have only one data type to write number and that is Number:
+        let text = "30"
+        let text1 = "abc";
+        console.log(typeof text)
+        let num = parseInt(text)
+        let num1= parseInt(text1)
+        console.log(num)
+        console.log(num1)
+        console.log(typeof sum.toString())
+
+        //  extra large or extra small number can be written in javascript in exponent notation:
+        let bigNum = 124e5;
+        let smallNum = 324e-4;
+
+        console.log(bigNum)
+        console.log(smallNum)
+
+        // after 15 dight it give us random answer:
+        let bigN = 9999999999999999;
+        console.log(bigN)
+
+        // floating point arithmetic is not always give us 100% accure answer:
+        let a = 0.2;
+        let b = 0.1;
+        console.log(a+b)
+
+        // special things:
+        let number1  = "29"
+        let number2 = 20
+        let sumNum = number1*number2;
+        console.log(typeof sumNum)
+        </script>
+</body>
+</html>
