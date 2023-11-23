@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+
+    <ul class="item">
+
+    </ul>
+
+    <button class="delete">Delete Item</button>
+    <input type="text" value="" placeholder="enter item" class="option">
+    <button class="insert">Insert Item</button>
+
+
+
+    <script>
+        // sign to write array: (in js array are always index array.);
+        let options = [
+            'Mother',
+            'father',
+            'me &',
+            'my brother',
+            '& sister'
+        ];
+
+        let deleteItem = document.querySelector('.delete');
+        let insertItem = document.querySelector('.insert');
+         
+         
+        let item = document.querySelector('.item')
+        let items = '';
+        options.forEach(e => {
+            items += `<li>${e}</li>`;
+            item.innerHTML = items;
+        });
+
+        deleteItem.addEventListener('click', function () {
+            options.pop();
+            items = '';
+            options.forEach(e => {
+                items += `<li>${e}</li>`;
+                item.innerHTML = items;
+            });
+        });
+
+        insertItem.addEventListener('click', function () {
+            let optionInsert = document.querySelector('.option').value;
+            console.log(optionInsert);
+            options.unshift(optionInsert);
+            items = '';
+            options.forEach(e => {
+                items += `<li>${e}</li>`;
+                item.innerHTML = items;
+            });
+        })
+    </script>
+</body>
+
+</html>
