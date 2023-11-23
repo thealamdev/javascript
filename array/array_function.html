@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Function</title>
+</head>
+
+<body>
+
+
+    <script>
+        let options = [
+            'one',
+            'two',
+            'three',
+            'four',
+            'five',
+            'six',
+            'seven'
+        ];
+
+        let extra = [
+            'EIGHT',
+            'NINE',
+            'TEN',
+            'ELEVEN'
+        ];
+
+        let newArray = options.concat(extra);
+        console.log(newArray);
+
+        let len = options.length;
+
+        options.splice(len, 0, 'eight', 'nine', 'ten');
+
+
+        console.log(options)
+    </script>
+</body>
+
+</html>
