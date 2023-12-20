@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates</title>
+</head>
+
+<body>
+
+    <div class="dateShow">
+
+    </div>
+
+    <script src="../date.js"></script>
+    <script>
+        let dateShow = document.querySelector('.dateShow');
+        dateShow.innerHTML = `<div>Year = ${year} , Month = ${month}, Days = ${days}, Minutes = ${minutes}, Seconds = ${seconds}, MiniSeconds = ${miliSeconds} , Date = ${date} </div>`;
+    </script>
+</body>
+
+</html>
