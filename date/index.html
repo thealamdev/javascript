@@ -62,16 +62,27 @@
         console.log(monthName)
         console.log(date)
         console.log(dayName)
-        console.log(hours)
+        console.log("local hour" + hours)
         console.log(minutes)
         console.log(seconds)
         console.log(time)
         console.log(misec)
 
-        // setInterval(() => {
-        //     seconds = dateNow.getSeconds();
-        //     console.log(seconds)
-        // }, 100);
+        const milisecond = Date.now();
+        const milisecond_2 = Date.parse(new Date());
+        const milisecond_3 = new Date().getTime();
+        console.log(milisecond_3)
+        console.log(milisecond_2)
+        console.log(milisecond)
+
+        // UTCget method
+        const utcHours = dateNow.getUTCHours(),
+            diff = dateNow.getTimezoneOffset();
+
+
+
+        console.log('UTC hours' + utcHours);
+        console.log(diff);
     </script>
 </body>
 
