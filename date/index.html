@@ -9,8 +9,6 @@
 
 <body>
 
-
-
     <script>
         // const todayDate = new Date("November 28,2001 12:00:00");
         const twoDate = new Date(2021, 9);
@@ -21,8 +19,6 @@
         console.log(todayDate.toDateString());
         console.log(todayDate.toUTCString());
         console.log(todayDate.toISOString());
-        console.log(todayDate.getDate());
-        console.log(todayDate.getDay());
 
         /* jsscript date formats 
 
@@ -41,17 +37,41 @@
         const msec = Date.parse(new Date())
         console.log(msec)
         const dateNow = new Date(msec);
+
         const year = dateNow.getFullYear();
-        const month = dateNow.getMonth();
-        console.log(year)
-        console.log(month)
+        month = dateNow.getMonth(),
+            date = dateNow.getDate(),
+            day = dateNow.getDay(),
+            hours = dateNow.getHours(),
+            minutes = dateNow.getMinutes(),
+            seconds = dateNow.getSeconds(),
+            time = dateNow.getTime(),
+            misec = dateNow.getMilliseconds()
+
 
         const getMonths = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september',
-            'october', 'november', 'december'
-        ];
+                'october', 'november', 'december'
+            ],
 
-        const monthName = getMonths[month];
+            getDays = ['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+
+        const monthName = getMonths[month],
+            dayName = getDays[day + 1];
+
+        console.log(year)
         console.log(monthName)
+        console.log(date)
+        console.log(dayName)
+        console.log(hours)
+        console.log(minutes)
+        console.log(seconds)
+        console.log(time)
+        console.log(misec)
+
+        // setInterval(() => {
+        //     seconds = dateNow.getSeconds();
+        //     console.log(seconds)
+        // }, 100);
     </script>
 </body>
 
