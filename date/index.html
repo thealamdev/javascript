@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date object</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        // const todayDate = new Date("November 28,2001 12:00:00");
+        const twoDate = new Date(2021, 9);
+        const threeDate = new Date(2021, 8, 34);
+        console.log(twoDate);
+        console.log(threeDate.toDateString());
+        const todayDate = new Date(24 * 60 * 60 * 1000);
+        console.log(todayDate.toDateString());
+        console.log(todayDate.toUTCString());
+        console.log(todayDate.toISOString());
+        console.log(todayDate.getDate());
+        console.log(todayDate.getDay());
+
+        /* jsscript date formats 
+
+        there are three date formats in js.
+        ->ISO ==> (yyyy-m-d)
+        ->Short date ==> (m-d-yyyy)
+        ->Long date ==> (Mar 25 2015 or 25 Mar 2015)
+        */
+
+        // add time in ISO Date format.
+
+        const isoDateTime = new Date('2015-03-12T04:00:00+09:00')
+        console.log(isoDateTime)
+
+        // current milisecond get 
+        const msec = Date.parse(new Date())
+        console.log(msec)
+        const dateNow = new Date(msec);
+        const year = dateNow.getFullYear();
+        const month = dateNow.getMonth();
+        console.log(year)
+        console.log(month)
+
+        const getMonths = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september',
+            'october', 'november', 'december'
+        ];
+
+        const monthName = getMonths[month];
+        console.log(monthName)
+    </script>
+</body>
+
+</html>
