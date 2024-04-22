@@ -9,7 +9,6 @@
 
 <body>
 
-
     <script>
         let options = [
             'one',
@@ -28,15 +27,47 @@
             'ELEVEN'
         ];
 
+        let model = [
+            'chr',
+            'crh',
+            'toyota',
+            'tesla'
+        ];
+
+        console.log(Array.isArray(model))
+        let vehicle = model.join('-->');
+        console.log(typeof vehicle)
+
         let newArray = options.concat(extra);
         console.log(newArray);
-
         let len = options.length;
-
         options.splice(len, 0, 'eight', 'nine', 'ten');
-
-
         console.log(options)
+
+        // flat array method:
+        let brand = [
+            [
+                'toyota brand',
+                'tesla brand',
+                'tata brand'
+            ],
+            [
+                'desi cars',
+                'desi model cars'
+            ],
+            [
+                'desi cars 1',
+                'desi model cars 2'
+            ]
+        ];
+
+        brand.forEach(e => {
+            e.forEach(q => {
+                console.log(q)
+            })
+        })
+        let base = brand.flat();
+        console.table(brand);
     </script>
 </body>
 

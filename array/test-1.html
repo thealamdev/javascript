@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Test</title>
+    <style>
+        .answer-box {
+            width: 700px;
+            height: 800px;
+            background-color: #444;
+            border-radius: 10px;
+            box-shadow: -2px -3px 5px 5px gray;
+        }
+
+        .answer-box ul li {
+            list-style: none;
+            padding: 10px;
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Question 1 : Create a list where you can add or delete element form upper side and down side.</h4>
+
+    <div class="answer-box">
+        <div class="action-box">
+            <button class="remove">Remove</button>
+        </div>
+        <ul>
+
+        </ul>
+    </div>
+
+
+    <script>
+        const element_box = document.querySelector('.answer-box ul');
+        const remove = document.querySelector('.remove');
+        let elements = [
+            'Apple',
+            'Mango',
+            'Orange',
+            'Banana'
+        ];
+
+        function updateList() {
+            element_box.innerHTML = '';
+            elements.forEach(e => {
+                let list = element_box.innerHTML += `<li>${e}</li>`;
+            });
+        }
+
+        updateList();
+        remove.addEventListener('click', function () {
+            elements.pop();
+            updateList();
+        });
+    </script>
+</body>
+
+</html>
