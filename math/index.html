@@ -11,11 +11,50 @@
 
 
     <script>
-        const randomNumber = Math.random(5),
-            pi = Math.PI;
+        // math object properties.
+        const mathPI = Math.PI,
+            mathE = Math.E,
+            mathSQRT2 = Math.SQRT2,
+            mathSQRT1_2 = Math.SQRT1_2,
+            mathLN2 = Math.LN2,
+            mathLN10 = Math.LN10,
+            mathlog2 = Math.LOG2E,
+            mathLOG10 = Math.LOG10E;
 
-        console.log(pi)
-        console.log(Math.floor(randomNumber * 10));
+        console.log(
+            'PI = ' + mathPI,
+            'Math E = ' + mathE,
+            'Math square root 2 = ' + mathSQRT2,
+            'Math squart root of 1/2 ' + mathSQRT1_2,
+            'Math ln 2 = ' + mathLN2,
+            'Math ln 10 = ' + mathLN10,
+            'Math log 2 = ' + mathlog2,
+            'Math log 10 = ' + mathLOG10,
+        )
+
+        // Math object methods.
+
+        const round = Math.round(5.78),
+            random = Math.random(4.7),
+            ceil = Math.ceil(9.4),
+            floor = Math.floor(3.40),
+            abs = Math.abs(-980),
+            power = Math.pow(2, 4),
+            sqrt = Math.sqrt(64),
+            max = Math.max(4, 6, 7, 8, 23),
+            min = Math.min(4, 6, 7, 8, 23)
+
+        console.log(
+            'round = ' + round,
+            'random = ' + random,
+            'ceil = ' + ceil,
+            'floor = ' + floor,
+            'absolute ' + abs,
+            'poewr = ' + power,
+            'sqrt = ' + sqrt,
+            'max = ' + max,
+            'min = ' + min
+        )
     </script>
 </body>
 
