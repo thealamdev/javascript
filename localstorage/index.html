@@ -8,33 +8,35 @@
 
     <style>
         body {
-            background-color: rgb(15 23 42);
-
+            background: rgb(15 23 42);
         }
 
         .container {
+            position: relative;
             width: 100%;
             height: 90vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             text-align: center;
-        }
-
-        #randomNumber {
-            font-size: 20px;
-            font-weight: 400;
-            color: rgb(255 255 255);
 
         }
 
-        .dies {
-            padding: 5px 12px;
+        .item {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
             border: 1px solid rgb(148 163 184);
-            border-radius: 4px;
-            background: transparent;
-            color: #fff;
-            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .eachItem {
+            padding: 10px 10px;
+            border-radius: 50%;
+            border: rgb(148 163 184);
+            margin: 5px;
         }
     </style>
 
@@ -44,16 +46,35 @@
 
     <div class="container">
         <div class="item">
-            
+
         </div>
     </div>
 
     <script>
-        const colorArray = ['red', 'green', 'blue'];
-        localStorage.setItem('lastname', 'Alam');
-        const lastName = localStorage.getItem('lastname')
+        const item = document.querySelector('.item'),
+            colorArray = ['rgb(15 23 42)', 'rgb(63 63 70)', 'rgb(66 32 6)', 'rgb(55 65 81)'];
 
-        console.log(lastName)
+
+        colorArray.forEach(element => {
+            const colorBox = `<div class="eachItem" style="background:${element}"></div>`;
+            item.innerHTML += colorBox;
+        });
+
+
+        let eachItem = document.querySelectorAll('.eachItem');
+
+        eachItem.forEach(element => {
+            element.addEventListener('click', (e) => {
+                const bgColor = element.style.background;
+                document.body.style.background = bgColor;
+                localStorage.setItem('bgColor', bgColor)
+
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', (element) => {
+            document.body.style.background = localStorage.getItem('bgColor');
+        })
 
     </script>
 </body>
