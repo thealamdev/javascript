@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+
+    <script>
+        let date = new Date();
+        const array = {
+            'day': date,
+            'month': date.getMonth(),
+        }
+
+        for (const key in array) {
+            if (Object.hasOwnProperty.call(array, key)) {
+                const element = array[key];
+                console.log(element)
+            }
+        }
+
+        var i = 5;
+
+        for (let i = 5; i <= 10; i++) {
+            // console.log(i);
+        }
+
+        console.log(i)
+
+
+        const person = {
+            'fname': 'Shah',
+            'lname': 'Alam',
+            'age': 24
+        };
+
+        for (let x in person) {
+            console.log(person['fname'])
+        }
+
+        console.log(person)
+        console.log(person.fname)
+        console.log(person['fname'])
+
+        const openArray = [12, 34, 5, 6];
+        openArray.forEach(function (value, index, array) {
+            console.log(value)
+        })
+
+    </script>
+</body>
+
+</html>
