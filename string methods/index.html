@@ -9,34 +9,35 @@
 </head>
 
 <body>
- 
-     <p id="demo" style="color:red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, possimus. Delectus soluta obcaecati, iure id suscipit sapiente sint nostrum molestias?</p>
+
+    <p id="demo" style="color:red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, possimus. Delectus
+        soluta obcaecati, iure id suscipit sapiente sint nostrum molestias?</p>
     <script>
-         let text = "My Name is shah alam shah";
-         let text2 = "I am a student";
-         let text3 = "        i read in the department of CSE            ";
-         let text4 = 6;
-         let textConvert = text4.toString();
-         let longText = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cum quo dignissimos iure corrupti architecto dolores placeat perferendis optio ipsum dolorem officia sit sint doloribus? Dolor earum dicta quidem aperiam!";
+        let text = "My Name is shah alam shah";
+        let text2 = "I am a student";
+        let text3 = "        i read in the department of CSE            ";
+        let text4 = 6;
+        let textConvert = text4.toString();
+        let longText = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cum quo dignissimos iure corrupti architecto dolores placeat perferendis optio ipsum dolorem officia sit sint doloribus? Dolor earum dicta quidem aperiam!";
 
         console.log(text);
         //  slice method:
         console.log(text.slice(11));
-        console.log(text.substring(-11,13))
-        console.log(text.substr(8,6))
-        console.log(text.replace(/shah/i,"hero"))
-        console.log(text.replaceAll("shah","hero"))
+        console.log(text.substring(-11, 13))
+        console.log(text.substr(8, 6))
+        console.log(text.replace(/shah/i, "hero"))
+        console.log(text.replaceAll("shah", "hero"))
         console.log(text.toUpperCase())
         console.log(text.toLowerCase())
-        console.log(text.concat("---",text2))
+        console.log(text.concat("---", text2))
         console.log(text + " ---" + text2)
         console.log(text3.trim())
         console.log(text3.trimStart())
         console.log(text3.trimEnd())
         console.log(text3)
-        console.log(textConvert.padStart(7,"0"))
-        let y = textConvert.padEnd(7,"0")
-        let final =parseInt(y);
+        console.log(textConvert.padStart(7, "0"))
+        let y = textConvert.padEnd(7, "0")
+        let final = parseInt(y);
         console.log(final)
         console.log(text.charAt(4))
         console.log(text.charCodeAt(4))
@@ -45,7 +46,7 @@
 
         let demoText = document.querySelector('#demo').innerHTML;
         console.log(demoText.fontcolor())
-        
+
     </script>
 </body>
 
