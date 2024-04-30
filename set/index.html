@@ -22,6 +22,12 @@
             }
         ];
 
+        const setObjects = {
+            'name': 'Alam',
+            'age': 23,
+            'cgpa': 3.56,
+        }
+
         const mySet = new Set(subjects);
 
         /*listing of elements by forEach*/
@@ -43,9 +49,18 @@
 
         }
 
+        /*Find the type of Set
+            but it's prototype is Set.
+        */
+        console.log(typeof mySet)
+        console.log(mySet.entries())
+
         /*Set has some methods */
         mySet.add('CSE');
         mySet.delete('English')
+
+        let set = setObjects.entries();
+        console.log(set)
     </script>
 </body>
 
