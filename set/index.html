@@ -24,13 +24,24 @@
 
         const mySet = new Set(subjects);
 
+        /*listing of elements by forEach*/
         mySet.forEach((e) => {
             if (typeof e == 'object') {
                 console.log(e.name, e.age)
             } else {
-                console.log(e)
+                console.log('forEach => ' + e)
             }
         })
+
+        /*listing of elements by for..of(because we pass an array)*/
+        for (value of mySet) {
+            if (typeof value == 'object') {
+                console.log(value.name, value.age)
+            } else {
+                console.log('Of => ' + value)
+            }
+
+        }
 
         /*Set has some methods */
         mySet.add('CSE');
