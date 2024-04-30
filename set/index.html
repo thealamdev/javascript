@@ -16,16 +16,25 @@
             'Bangla',
             'Math',
             'English',
-            'Math'
+            {
+                'name': 'Shah Alam',
+                'age': 24,
+            }
         ];
 
-        console.log(subjects);
         const mySet = new Set(subjects);
-        console.log(mySet.values())
 
         mySet.forEach((e) => {
-            console.log(e)
+            if (typeof e == 'object') {
+                console.log(e.name, e.age)
+            } else {
+                console.log(e)
+            }
         })
+
+        /*Set has some methods */
+        mySet.add('CSE');
+        mySet.delete('English')
     </script>
 </body>
 
