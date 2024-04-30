@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+</head>
+
+<body>
+
+
+    <script>
+        const subjects = [
+            'English',
+            'Bangla',
+            'Math',
+            'English',
+            'Math'
+        ];
+
+        console.log(subjects);
+        const mySet = new Set(subjects);
+        console.log(mySet.values())
+
+        mySet.forEach((e) => {
+            console.log(e)
+        })
+    </script>
+</body>
+
+</html>
