@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type of</title>
+</head>
+
+<body>
+
+    <a href="javascript:void(0)">Useless link</a>
+    <a href="javascript:void(document.body.style.background ='red')">Change Background</a>
+
+    <script>
+        console.log(typeof 'Shah');
+        console.log(typeof 345);
+        console.log(typeof true);
+        console.log(typeof array);
+        console.log(typeof NaN);
+        console.log(typeof null);
+        console.log(typeof [1, 2, 3]);
+        console.log(typeof new Date());
+        console.log(typeof {
+            name: 'Shah'
+        });
+        console.log(function () {})
+
+        /*Constructor Property*/
+        console.log('Shah'.constructor)
+        console.log((8347).constructor)
+        console.log([1, 2, 3, 4].constructor)
+
+        function myArray(myArr) {
+            console.log(myArr.constructor.toString().indexOf('Date') > -1)
+        }
+
+
+        const myArr = [1, 2, 3, 4];
+        typeof myArr.constructor
+        myArray(myArr)
+        myArray({
+            name: 'shah'
+        })
+        myArray(new Date())
+        myArray(function () {})
+
+        let person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+        console.log(person)
+        person = '';
+        console.log(person)
+    </script>
+</body>
+
+</html>
