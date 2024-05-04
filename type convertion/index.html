@@ -10,9 +10,51 @@
 <body>
 
     <script>
-        let number = 1000;
-        console.log(number.toString())
-        console.log(String(number))
+        /*String to Number converiton
+          basically in javascrit there are 3 method to convert sting to Number.
+           -> Number()
+           -> parseInt()
+           -> parseFloat()
+        */
+        let number = '1230',
+            convertedNumber = Number(number),
+            convertedParseInt = parseInt(number),
+            convertedParseFloat = parseFloat(number),
+            number2 = 123;
+
+        console.log(convertedNumber + number2)
+        console.log(convertedParseInt + number2)
+        console.log(convertedParseFloat + number2)
+
+        /*
+            In javascript '3.14' converted in 3.14
+            "" empty string converted into 0
+            'jhon' string converted into NaN(Not a number)
+        */
+
+        let PI = '3.14',
+            emptyString = '',
+            name = 'jhon';
+
+        console.log(parseFloat(PI))
+        console.log(Number(emptyString))
+        console.log(Number(name))
+
+        /*The Unary + operator*/
+        let y = '5';
+        let x = +y;
+        console.log(typeof x)
+
+        /*Others number methods*/
+        let exponen = 10000000;
+        let fixed = 8303.343;
+        let exponsential = exponen.toExponential()
+        let toFixed = fixed.toFixed(1)
+        let toPrecision = fixed.toPrecision(2)
+
+        console.log(exponsential)
+        console.log(toFixed)
+        console.log(toPrecision)
     </script>
 </body>
 
