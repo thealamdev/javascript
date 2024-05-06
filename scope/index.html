@@ -28,13 +28,14 @@
         let myFun = () => {
             let number1 = 10;
             let number2 = 20;
-            var sumOfThen = x + y;
+            var sumOfThen = number1 + number2;
             console.log(sumOfThen);
         }
 
-        console.log(sumOfThen)
+        //console.log(sumOfThen) // can not be accessable form here.
 
         myFun();
+        // console.log(sumOfThen)
 
         var value = 20; {
             value = 30;
@@ -46,6 +47,14 @@
 
 
 
+        // code here can use carName
+
+        function myFunction() {
+            carName = "Volvo";
+        }
+
+        myFunction();
+        console.log(carName)
 
 
 
