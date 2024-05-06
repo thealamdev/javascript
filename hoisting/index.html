@@ -11,7 +11,7 @@
 
 
     <script>
-        "use strict";
+        // "use strict";
         value = 5;
         console.log(value);
         var value;
@@ -23,8 +23,18 @@
             x = 20;
             console.log(x)
         }
-
         myFun()
+
+        var number = 10;
+
+        function myFunction() {
+            console.log(this); // will alert "undefined"
+        }
+        myFunction();
+
+        newNumber = 19;
+        console.log(newNumber);
+        var newNumber;
     </script>
 </body>
 
