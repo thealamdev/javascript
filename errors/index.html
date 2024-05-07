@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erros</title>
+</head>
+
+<body>
+
+
+    <script>
+        let quantity = 11;
+
+        try {
+            if (quantity < 5) {
+                throw {
+                    name: 'QuantityError',
+                    message: 'Quantity is less than 5'
+                }
+                console.log('The quantity is less than 5')
+
+            } else if (quantity > 10) {
+                console.log('The quantity is ' + quantity)
+                throw {
+                    name: 'QuantityError',
+                    message: 'Quantity is gratter than 10'
+                }
+            }
+        } catch (err) {
+            console.log(err.name + ": " + err.message)
+        } finally {
+            console.log('Finally block')
+        }
+
+        let num = 1;
+        try {
+            num.toPrecision(500); // A number cannot have 500 significant digits
+        } catch (err) {
+            console.log(err.name)
+        }
+
+        try {
+            let number = num.toUpperCase();
+            console.log(number)
+        } catch (err) {
+            console.log(err.name)
+            console.log(err.message)
+        }
+    </script>
+</body>
+
+</html>

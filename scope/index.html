@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+
+<body>
+
+
+    <script>
+        {
+            let x = 10;
+            let y = 20;
+            let sum = x + y;
+            console.log(sum)
+        }
+
+        {
+            let x = 10;
+            let y = 20;
+            let sum = x + y;
+            console.log(sum)
+        }
+
+        let myFun = () => {
+            let number1 = 10;
+            let number2 = 20;
+            var sumOfThen = number1 + number2;
+            console.log(sumOfThen);
+        }
+
+        //console.log(sumOfThen) // can not be accessable form here.
+
+        myFun();
+        // console.log(sumOfThen)
+
+        var value = 20; {
+            value = 30;
+            let sum = 20 + value;
+            console.log(sum);
+        }
+
+        console.log(value)
+
+
+
+        // code here can use carName
+
+        function myFunction() {
+            carName = "Volvo";
+        }
+
+        myFunction();
+        console.log(carName)
+
+
+
+        // var value = 20;
+
+        // function foo() {
+        //     console.log(value)
+        //     var value = 10;
+        // }
+        // foo()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Arrow function</title>
+</head>
+
+<body>
+
+
+    <script>
+        /* Js arrow funtion
+            it's introduce in 2015(ES6)
+        */
+
+        function oldFun() {
+            return 'This is old function';
+        }
+
+        /*We can store arrow function in a variable but for old funtion we can't do this*/
+        arrowFun = () => {
+            return 'This is arrow function';
+        }
+
+        console.log(oldFun())
+        console.log(arrowFun())
+
+        arrowFunction = x => 'This is arrow function ' + x;
+        console.log(arrowFunction(60))
+    </script>
+</body>
+
+</html>

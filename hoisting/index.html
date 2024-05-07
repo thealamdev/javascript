@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Hoisting</title>
+</head>
+
+<body>
+
+
+    <script>
+        // "use strict";
+        value = 5;
+        console.log(value);
+        var value;
+
+        var x = 10;
+
+        function myFun() {
+            console.log(x);
+            x = 20;
+            console.log(x)
+        }
+        myFun()
+
+        var number = 10;
+
+        function myFunction() {
+            console.log(this); // will alert "undefined"
+        }
+        myFunction();
+
+        newNumber = 19;
+        console.log(newNumber);
+        var newNumber;
+    </script>
+</body>
+
+</html>

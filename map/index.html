@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+
+<body>
+
+    <script>
+        /*Creating a map by new Map()*/
+        const myMap = new Map([
+            ["apples", 500],
+            ["bananas", 300],
+            ["oranges", 200]
+        ]);
+
+        const letters = new Map([
+            ["a", 20],
+            ["b", 30],
+            ["c", 60]
+        ]);
+
+        console.log(letters.entries());
+        console.log(letters.keys())
+        console.log(letters.values())
+        console.log(letters.get('a'))
+        console.log(letters.set('e', 5))
+
+
+
+        // console.log(myMap.values());
+        console.log(letters);
+    </script>
+</body>
+
+</html>
