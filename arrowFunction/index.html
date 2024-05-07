@@ -29,6 +29,19 @@
 
         arrowFunction = x => 'This is arrow function ' + x;
         console.log(arrowFunction(60))
+
+        /*Arrow funtion this and normal functon this*/
+        function oldThis() {
+            console.log(this);
+        }
+
+        oldThis();
+
+        newThis = () => {
+            console.log(this)
+        }
+
+        newThis()
     </script>
 </body>
 
