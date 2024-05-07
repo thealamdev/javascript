@@ -17,10 +17,17 @@
                 setTimeout(function () {
                     console.log(this.name)
                 }.bind(this), 2000);
+            },
+            age: 34,
+            ageShow: function () {
+                setTimeout( () => {
+                    console.log(this.age)
+                }, 2000)
             }
         }
 
         object.print();
+        object.ageShow()
     </script>
 </body>
 
