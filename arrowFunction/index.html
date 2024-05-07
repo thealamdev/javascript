@@ -9,14 +9,25 @@
 
 <body>
 
-
-    <div class="blurDiv">
-        Hello how are you?
-    </div>
-
-    <button class="blurIt">Try it</button>
+    <p class="demo"></p>
+    <button class="oldButton">Old Fun</button>
 
     <script>
+
+        let demo = document.querySelector('.demo');
+        let button = document.querySelector('.oldButton');
+
+        function oldFun() {
+            demo.innerHTML += this;
+        }
+
+        button.addEventListener('click', function () {
+            alert(this)
+            oldFun();
+        })
+
+
+
         /* Js arrow funtion
             it's introduce in 2015(ES6)
         */
@@ -49,12 +60,7 @@
 
         newThis(this)
 
-        let blurDiv = document.querySelector('.blurDiv');
-        let blurIt = document.querySelector('.blurIt');
 
-        blurIt.addEventListener('click', () => {
-            window.open("", "", "width=200px, height=300px")
-        });
 
 
 
