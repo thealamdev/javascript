@@ -14,7 +14,9 @@
         let object = {
             name: 'Shah Alam',
             print: function () {
-                console.log(this);
+                setTimeout(function () {
+                    console.log(this.name)
+                }.bind(this), 2000);
             }
         }
 
