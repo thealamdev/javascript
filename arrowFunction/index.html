@@ -10,6 +10,12 @@
 <body>
 
 
+    <div class="blurDiv">
+        Hello how are you?
+    </div>
+
+    <button class="blurIt">Try it</button>
+
     <script>
         /* Js arrow funtion
             it's introduce in 2015(ES6)
@@ -38,10 +44,21 @@
         oldThis();
 
         newThis = () => {
-            console.log(this)
+            console.log(this.blur)
         }
 
-        newThis()
+        newThis(this)
+
+        let blurDiv = document.querySelector('.blurDiv');
+        let blurIt = document.querySelector('.blurIt');
+
+        blurIt.addEventListener('click', () => {
+            window.open("", "", "width=200px, height=300px")
+        });
+
+
+
+
     </script>
 </body>
 
