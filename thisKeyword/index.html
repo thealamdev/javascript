@@ -11,7 +11,7 @@
 
 
     <script>
-        // "use strict";
+        "use strict";
         /*In a object this keyword denote the object of the owner*/
         const person = {
             firstName: 'Shah',
@@ -31,6 +31,11 @@
         }
 
         console.log(myFun());
+
+        /*In a free space this keyword refers the window object(it should return window object in normal mood 
+          and use strict mood
+        */
+        console.log(this)
     </script>
 </body>
 
