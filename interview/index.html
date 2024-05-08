@@ -21,14 +21,19 @@
 
         let demoItem = document.querySelector('.demoItem');
         let count = 0;
-        demoItem.addEventListener('click', () => {
+        // demoItem.addEventListener('click', () => {
+        //     demoItem.innerHTML = arrayValue[count++];
+        //     if (count == 4) {
+        //         count = 0;
+        //     }
+        // })
+
+        demoItem.onclick = () => {
             demoItem.innerHTML = arrayValue[count++];
             if (count == 4) {
                 count = 0;
             }
-        })
-
-
+        }
     </script>
 </body>
 
