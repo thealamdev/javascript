@@ -59,6 +59,21 @@
 
         console.log(car.name())
 
+        /*Explicit function binding */
+        const student = {
+            name: 'Shah Alam',
+            getInfo: function (subject, cgpa) {
+                return this.name + " got " + cgpa + ' in ' + subject;
+            }
+        }
+
+        const subject = {
+            subject: 'CSE',
+            cgpa: 3.68,
+        }
+
+        console.log(student.getInfo.call(student, subject.subject, subject.cgpa));
+
 
 
 
