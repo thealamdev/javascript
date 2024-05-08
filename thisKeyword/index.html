@@ -75,7 +75,7 @@
         // console.log(student.getInfo.call(student, subject.subject, subject.cgpa));
         const student = {
             name: 'Shah Alam',
-            getInfo: function () {
+            getInfo: function (cgpa, subject) {
                 return this.name + " got " + cgpa + ' in ' + subject;
             }
         }
@@ -88,7 +88,15 @@
         console.log(student.getInfo.call(student, subject.subject, subject.cgpa));
 
 
+        /*Apply method used in array to find the max*/
 
+        let numbers = [1, 2, 3, 4, 6];
+
+
+        let max = Math.max.apply("", numbers);
+        console.log(max)
+        let min = Math.min.apply("", numbers);
+        console.log(min)
 
     </script>
 </body>
