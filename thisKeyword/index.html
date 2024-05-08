@@ -46,6 +46,19 @@
             alert(element);
         }
 
+        /*Object method binding*/
+
+        const car = {
+            brand: 'Toyota',
+            model: 'CHR',
+            model_year: 2018,
+            name: function () {
+                return this;
+            }
+        }
+
+        console.log(car.name())
+
 
 
 
