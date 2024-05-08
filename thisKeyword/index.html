@@ -8,7 +8,9 @@
 </head>
 
 <body>
-
+    <!-- this is an Event handlers -->
+    <button onclick="this.style.display='none'">Hide it</button>
+    <button onclick="getEvent(this)">Get alert</button>
 
     <script>
         "use strict";
@@ -36,6 +38,17 @@
           and use strict mood
         */
         console.log(this)
+
+        /*
+        * this in Event Handlers
+        */
+        function getEvent(element) {
+            alert(element);
+        }
+
+
+
+
     </script>
 </body>
 
