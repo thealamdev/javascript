@@ -11,6 +11,7 @@
 
 
     <script>
+        // "use strict";
         /*In a object this keyword denote the object of the owner*/
         const person = {
             firstName: 'Shah',
@@ -22,6 +23,14 @@
         }
 
         console.log(person.fullName());
+
+        /*In a function this keyword return window object in normal mood*/
+
+        function myFun() {
+            return this;
+        }
+
+        console.log(myFun());
     </script>
 </body>
 
