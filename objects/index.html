@@ -24,6 +24,29 @@
     }
 
     console.log(car.start());
+
+    /*Nasted objects*/
+
+    const myObj = {
+      name: "John",
+      age: 30,
+      cars: [
+        { name: "Ford", models: ["Fiesta", "Focus", "Mustang"] },
+        { name: "BMW", models: ["320", "X3", "X5"] },
+        { name: "Fiat", models: ["500", "Panda"] }
+      ]
+    }
+
+    console.log(myObj.cars)
+
+    for (key in myObj.cars) {
+      console.log("Head = " + myObj.cars[key].name)
+      for (nastedKey in myObj.cars[key].models) {
+        console.log(myObj.cars[key].models[nastedKey])
+      }
+      console.log('------')
+    }
+
   </script>
 
 
