@@ -31,14 +31,14 @@
         let arrowObject = {
             name: 'Shah Alam',
             age: 23,
-            fullInfo: function () {
+            fullInfo: function (name) {
                 setTimeout(() => {
                     console.log(this)
                 }, 1000)
             }
         }
 
-        arrowObject.fullInfo()
+        arrowObject.fullInfo('Shah')
     </script>
 
 
