@@ -10,23 +10,35 @@
 <body>
 
     <script>
-        let object = {
+        // let object = {
+        //     name: 'Shah Alam',
+        //     print: function () {
+        //         setTimeout(function () {
+        //             console.log(this.name)
+        //         }.bind(this), 2000);
+        //     },
+        //     age: 34,
+        //     ageShow: function () {
+        //         setTimeout(() => {
+        //             console.log(this.age)
+        //         }, 2000)
+        //     }
+        // }
+
+        // object.print();
+        // object.ageShow()
+
+        let arrowObject = {
             name: 'Shah Alam',
-            print: function () {
-                setTimeout(function () {
-                    console.log(this.name)
-                }.bind(this), 2000);
-            },
-            age: 34,
-            ageShow: function () {
-                setTimeout(() => {
-                    console.log(this.age)
-                }, 2000)
+            age: 23,
+            fullInfo: function () {
+                setTimeout( () => {
+                    console.log(this)
+                }, 1000)
             }
         }
 
-        object.print();
-        object.ageShow()
+        arrowObject.fullInfo()
     </script>
 
 
