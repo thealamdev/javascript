@@ -12,8 +12,35 @@
 
     <script>
         let jsonDate = {
-            "employee": "Employee are very fine.",
-            "holder": "Holders are very good."
+            "employees": [{
+                    "firstName": "John",
+                    "lastName": "Doe"
+                },
+                {
+                    "firstName": "Anna",
+                    "lastName": "Smith"
+                },
+                {
+                    "firstName": "Peter",
+                    "lastName": "Jones"
+                }
+            ]
+        }
+
+        console.log(jsonDate.employees);
+        for (key in jsonDate.employees) {
+            console.log(jsonDate.employees[key]);
+        }
+
+        let text = '{ "employees" : [' +
+            '{ "firstName":"John" , "lastName":"Doe" },' +
+            '{ "firstName":"Anna" , "lastName":"Smith" },' +
+            '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+
+        console.log(JSON.parse(text))
+        const convertedJson = JSON.parse(text);
+        for (key in convertedJson.employees) {
+            console.log(convertedJson.employees[key].firstName);
         }
     </script>
 </body>
