@@ -59,3 +59,22 @@ const longestWord = function (arr) {
 }
 
 console.log(longestWord(arr));
+
+/**
+ * input : linearSearch([a,b,c,d,e],'e)
+ * output: 2 or not found
+ * problem: implement the linearSearch funtion 
+ */
+
+const inputArray = ['a', 'b', 'c', 'd', 'e'];
+
+let linearFunction = (inputArray, e) => {
+    for (target of inputArray) {
+        if (target === e) {
+            return [target, inputArray.indexOf(target)];
+        }
+    }
+    return 'No matched found!'
+}
+
+console.log(linearFunction(inputArray, 'c'));
