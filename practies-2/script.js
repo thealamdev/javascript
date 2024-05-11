@@ -96,3 +96,34 @@ const numberFinder = (number) => {
     return response;
 }
 console.log(numberFinder(100));
+
+/**
+ * Question 5 : 
+ * find the truely valie from an array.
+ */
+
+const falselyArray = [
+    'Hi',
+    false,
+    undefined,
+    'Hello',
+    0,
+    2, 5,
+    '',
+    'OPEN',
+    NaN,
+];
+
+console.log(falselyArray)
+
+function trueArray(falselyArray) {
+    falselyArray.filter(function (el) {
+        if (el) {
+            return true;
+        } else {
+            return false;
+        }
+    })
+}
+
+console.log(trueArray(falselyArray))
