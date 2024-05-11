@@ -11,4 +11,34 @@ console.log(totalNumber);
 
 let position = text.search(/Shahs/i);
 position = position > 0 ? position : 'no found!';
-console.log(position)
+console.log(position);
+
+
+/**
+ * question 2 : 
+ * কোন Array থেকে কিভাবে সবথেকে বড় String বের করা যাবে এবং তার index নাম্বার দেখাবেন ? 
+ */
+
+const arr = [
+    'Shah alam is a good boy',
+    'he is good',
+    'hi'
+];
+
+
+console.log(arr)
+
+let longLength = [];
+let len = arr.length;
+for (let i = 0; i < len; i++) {
+    longLength.push(arr[i].length);
+}
+
+let long = Math.max.apply(0, longLength);
+
+for (let i = 0; i < len; i++) {
+    if (long == arr[i].length) {
+        console.log(arr[i]);
+    }
+}
+
