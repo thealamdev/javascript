@@ -91,7 +91,7 @@ ul {
 }
 
 .bg-slate-900 {
-    background: rgb(15 23 42);
+    background: rgb(15 23 42) !important;
 }
 
 /* ---- border color ---- */
@@ -127,9 +127,3 @@ ul {
     min-height: 200px;
 }
 
-/* table css */
-
-.table {
-    border-collapse: collapse;
-    width: 100%;
-}
