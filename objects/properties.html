@@ -11,15 +11,25 @@
 
 
     <script>
-        let l = 'lastName'
+        let lname = 'lastName'
+        const family = {
+            father: 'Saiful islam',
+            mother: 'Shumsunnnahar Begum',
+        }
         const person = {
             firstName: 'Shah',
-            age: 23
+            age: 23,
+            family: family
         }
 
-        person[l] = 'Alam';
+        person[lname] = 'Alam';
 
         console.log(person);
+
+        // deleting properties
+
+        delete person.age;
+        console.log(person)
     </script>
 </body>
 
