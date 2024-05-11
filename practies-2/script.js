@@ -108,7 +108,8 @@ const falselyArray = [
     undefined,
     'Hello',
     0,
-    2, 5,
+    2,
+    5,
     '',
     'OPEN',
     NaN,
@@ -119,11 +120,9 @@ console.log(falselyArray)
 function trueArray(falselyArray) {
     falselyArray.filter(function (el) {
         if (el) {
-            return true;
-        } else {
-            return false;
+            console.log(el)
         }
     })
 }
 
-console.log(trueArray(falselyArray))
+(trueArray(falselyArray))
