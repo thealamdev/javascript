@@ -27,22 +27,6 @@ const arr = [
 ];
 
 
-// console.log(arr)
-
-// let longLength = [];
-// let len = arr.length;
-// for (let i = 0; i < len; i++) {
-//     longLength.push(arr[i].length);
-// }
-
-// let long = Math.max.apply(0, longLength);
-
-// for (let i = 0; i < len; i++) {
-//     if (long == arr[i].length) {
-//         console.log(arr[i]);
-//     }
-// }
-
 /**
  * alternative way of this
  */
@@ -61,6 +45,7 @@ const longestWord = function (arr) {
 console.log(longestWord(arr));
 
 /**
+ * Question 3:
  * input : linearSearch([a,b,c,d,e],'e)
  * output: 2 or not found
  * problem: implement the linearSearch funtion 
@@ -78,3 +63,35 @@ let linearFunction = (inputArray, e) => {
 }
 
 console.log(linearFunction(inputArray, 'c'));
+
+/**
+ * Question 4:
+ * find the number between 1 to 100 those are divided by 3,5 and both 3 and 5.
+ */
+
+const numberFinder = (number) => {
+    let threeD = [],
+        fiveD = [],
+        bothD = [];
+
+    for (let i = 1; i <= number; i++) {
+        if (i % 3 == 0) {
+            threeD.push(i);
+        }
+        if (i % 5 == 0) {
+            fiveD.push(i);
+        }
+        if (i % 3 === 0 && i % 5 === 0) {
+            bothD.push(i);
+        }
+    }
+
+    const response = {
+        'threeDivided': threeD,
+        'fiveDivided': fiveD,
+        'bothDivided': bothD
+    }
+
+    return response;
+}
+console.log(numberFinder(100));
