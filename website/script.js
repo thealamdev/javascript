@@ -26,7 +26,7 @@ const renderTable = () => {
             <tr>
                 <td>${key}</td>
                 <td>${inputItem[key]}</td>
-                <td class="deleteBtn" onclick="deleteItem('${key}')">Delete</td>
+                <td class="deleteBtn" onclick="deleteItem('${key}')"><i class="text-danger las la-trash"></i></td>
             </tr>
         `);
     }
@@ -37,8 +37,10 @@ const renderTable = () => {
  */
 
 let deleteItem = function (key) {
-    delete inputItem[key];
-    renderTable()
+    if (confirm('Are you sure to delete this ???')) {
+        delete inputItem[key];
+        renderTable()
+    }
 }
 
 
