@@ -126,3 +126,32 @@ function trueArray(falselyArray) {
 }
 
 (trueArray(falselyArray))
+
+/**
+ * Question 6 : 
+ * find the truely valie from an object.
+ */
+
+const obj = {
+    a: 'Hello',
+    b: undefined,
+    c: 'Shah',
+    d: '',
+    e: 'How',
+    f: 0,
+    g: 'are',
+    h: NaN,
+    i: 'you',
+    j: false
+};
+
+function truleyObject(obj) {
+    for (key in obj) {
+        if (!obj[key]) {
+            delete obj[key];
+        }
+    }
+    return obj;
+}
+
+console.log(truleyObject(obj))
