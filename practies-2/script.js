@@ -75,21 +75,22 @@ const numberFinder = (number) => {
         bothD = [];
 
     for (let i = 1; i <= number; i++) {
-        if (i % 3 == 0) {
+        if (i % 15 == 0) {
+            bothD.push(i);
+        }
+        else if (i % 3 == 0) {
             threeD.push(i);
         }
-        if (i % 5 == 0) {
+        else if (i % 5 == 0) {
             fiveD.push(i);
-        }
-        if (i % 3 === 0 && i % 5 === 0) {
-            bothD.push(i);
         }
     }
 
     const response = {
         'threeDivided': threeD,
         'fiveDivided': fiveD,
-        'bothDivided': bothD
+        'bothDivided': bothD,
+
     }
 
     return response;
