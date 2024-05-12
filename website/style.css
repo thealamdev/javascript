@@ -84,6 +84,14 @@ ul {
     -o-border-radius: 15px;
 }
 
+.border-round{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 /* ---- background colors ---- */
 
 .bg-slate-500 {
@@ -91,7 +99,7 @@ ul {
 }
 
 .bg-slate-900 {
-    background: rgb(15 23 42) !important;
+    background: rgb(148 163 184);
 }
 
 /* ---- border color ---- */
@@ -125,5 +133,21 @@ ul {
 
 .mh-200 {
     min-height: 200px;
+}
+
+/* ---- padding related css ---- */
+
+.p-2{
+    padding: 10px 10px;
+}
+
+.p-1{
+    padding: 5px;
+}
+
+/* ---- font size css ---- */
+
+.fs-5{
+    font-size: 20px;
 }
 

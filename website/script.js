@@ -23,10 +23,12 @@ const renderTable = () => {
     tableContent.innerHTML = '';
     for (let key in inputItem) {
         tableContent.insertAdjacentHTML('beforeend', `
-            <tr>
+            <tr style="text-align:center">
                 <td>${key}</td>
                 <td>${inputItem[key]}</td>
-                <td class="deleteBtn" onclick="deleteItem('${key}')"><i class="text-danger las la-trash"></i></td>
+                <td>
+                 <a href="#" class="deleteBtn border-slate-400 p-1 border-sm" onclick="deleteItem('${key}')"><i class="fs-5 text-danger las la-trash"></i></a>
+                </td>
             </tr>
         `);
     }
