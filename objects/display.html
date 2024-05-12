@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Display</title>
+</head>
+
+<body>
+
+
+    <script>
+        const person = {
+            name: 'Shah',
+            age: 23,
+            infos: function () {
+                return this.name + " " + this.age;
+            }
+        };
+
+        // there are four ways to display objects
+
+        // alert(Object.values(person))
+        person.infos.toString()
+        console.log(JSON.stringify(person)) // stringfy does not show function.
+        console.log(Object.values(person))
+
+        const arr = ["John", "Peter", "Sally", "Jane"];
+
+        let myString = JSON.stringify(arr);
+        console.log(myString)
+    </script>
+</body>
+
+</html>
