@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Accessors</title>
+</head>
+
+<body>
+
+
+    <script>
+        const person = {
+            firtName: 'Shah',
+            lastName: 'Alam',
+            age: 23,
+            get fullName() {
+                return this.firtName + " " + this.lastName;
+            }
+
+        }
+        console.log(person)
+
+        // Setter (object accessors)
+
+        const student = {
+            name: 'Mehedi Hasan',
+            age: 22,
+            set cgpa(cppa) {
+                return this.cgpa;
+            }
+        }
+        
+
+        
+    </script>
+</body>
+
+</html>
