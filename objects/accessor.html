@@ -24,17 +24,16 @@
 
         // Setter (object accessors)
 
-        const student = {
-            name: 'Mehedi Hasan',
-            age: 22,
-            grade: '',
-            set cgpa(cgpa) {
-                this.grade = cgpa;
+        const cars = {
+            name: 'Toyota',
+            model: "",
+            set setModel(model) {
+                this.model = model;
             }
         }
 
-        student.cgpa = "3.45";
-        console.log(student.grade)
+        cars.setModel = 'C-HR';
+        console.log(cars.model)
 
 
     </script>
