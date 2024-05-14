@@ -27,13 +27,16 @@
         const student = {
             name: 'Mehedi Hasan',
             age: 22,
-            set cgpa(cppa) {
-                return this.cgpa;
+            grade: '',
+            set cgpa(cgpa) {
+                this.grade = cgpa;
             }
         }
-        
 
-        
+        student.cgpa = "3.45";
+        console.log(student.grade)
+
+
     </script>
 </body>
 
