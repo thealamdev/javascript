@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object iterable</title>
+</head>
+
+<body>
+
+    <script>
+        let numbers = [1, 3, 4, 5];
+
+        let iterateItem = numbers[Symbol.iterator]();
+        console.log(iterateItem.next());
+        console.log(iterateItem.next());
+        console.log(iterateItem.next());
+        console.log(iterateItem.next());
+        console.log(iterateItem.next());
+
+        let marks = {
+            one: 1,
+            two: 2,
+            three: 3
+        }
+
+        marks[Symbol.iterator] = function () {
+            let n = 0;
+            let done = false;
+            return {
+                next() {
+                    n += 10;
+                    if (n === 100) {
+                        done = true
+                    }
+                    return {
+                        value: n,
+                        done: done
+                    }
+                }
+            }
+        }
+
+        for (key of marks) {
+            console.log(key)
+        }
+    </script>
+</body>
+
+</html>
