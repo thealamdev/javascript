@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object constructor</title>
+</head>
+
+<body>
+
+
+    <script>
+        function Person(name) {
+            this.firstName = name;
+            this.getName = function () {
+                return this.firstName;
+            }
+            this.motherName = function () {
+                return 'Shamsunnahar'
+            }
+        }
+
+
+        let person = new Person('Alam');
+         
+        console.log(person.motherName())
+    </script>
+</body>
+
+</html>
