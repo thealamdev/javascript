@@ -18,6 +18,14 @@
         console.log(display.length);
         console.log(display());
         console.log(display.opne);
+
+        let x = 2;
+
+        function fun() {
+            console.log(x);
+            let x = 8;
+        }
+        fun() // this return us ReferanceError
     </script>
 </body>
 
