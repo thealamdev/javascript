@@ -14,10 +14,14 @@
         const MyFun = function (n1, n2) {
             this.number1 = n1;
             this.number2 = n2;
+            console.log(this)
         }
 
-        MyFun(3, 5);
-        console.log(MyFun.number1)
+
+        let obj = new MyFun(3, 4);
+        // MyFun(3,5)
+         
+         
     </script>
 </body>
 
