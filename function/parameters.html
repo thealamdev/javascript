@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function parameters</title>
+</head>
+
+<body>
+
+
+    <script>
+        /* parameters pass by value and object pass by referance*/
+        function person(english, math, bangla) {
+            english = 10;
+            console.log(english);
+        }
+
+        let english = 15;
+        let math = 20;
+        let bangla = 30;
+        person(english, math, bangla);
+        console.log(english)
+    </script>
+</body>
+
+</html>
