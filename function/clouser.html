@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Function Clouser</title>
 </head>
+
 <body>
 
     <h3>Funciton Clouser</h3>
 
     <script>
+        const counter = (function () {
+            let count = 0;
+
+            return function plus() {
+                count += 1;
+                return count;
+            }
+        })()
+
         
+        console.dir(counter())
+        console.dir(counter())
+        console.dir(counter())
     </script>
 </body>
+
 </html>
