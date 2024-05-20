@@ -12,16 +12,23 @@
 
     <script>
         /* parameters pass by value and object pass by referance*/
-        function person(english, math, bangla) {
+        function person(english, personInfo) {
             english = 10;
             console.log(english);
+
+            personInfo.age = 24;
+            console.log('new person info ' + personInfo.age)
         }
 
         let english = 15;
-        let math = 20;
-        let bangla = 30;
-        person(english, math, bangla);
+
+        const personInfo = {
+            age: 23
+        }
+
+        person(english, personInfo);
         console.log(english)
+        console.log('old person info ' + personInfo.age)
     </script>
 </body>
 
