@@ -12,17 +12,17 @@
 
 
     <script>
+        /*Hoisting is woring in function defination in literal way but not working in function expression*/
         myFun()
         newFun();
+
         function myFun() {
             console.log('Hi');
         }
 
         const newFun = function () {
             console.log('Hello');
-        }
-
-         
+        };
     </script>
 </body>
 
