@@ -23,12 +23,30 @@
         let english = 15;
 
         const personInfo = {
-            age: 23
+            age: 23,
+            name : 'SHAH ALAM'
         }
 
         person(english, personInfo);
         console.log(english)
         console.log('old person info ' + personInfo.age)
+
+        /*Argument property in function*/
+
+        function getProperties(...args) {
+            let propertyCount = arguments.length;
+            console.log("total properties " + propertyCount)
+            console.log(args)
+        }
+
+        getProperties(3, 4, 5, 6, 7, 8, 8, 9)
+
+        /*Use of Rest Parameter*/
+        function getProperties(...args) {
+            console.log(args)
+        }
+
+        getProperties(personInfo)
     </script>
 </body>
 
