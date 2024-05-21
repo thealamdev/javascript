@@ -34,7 +34,6 @@
 
         localStorage.setItem('person', JSON.stringify(person));
         let response = JSON.parse(localStorage.getItem('person'));
-        // console.log(JSON.parse(response))
 
         document.addEventListener('DOMContentLoaded', (element) => {
             nameDiv.textContent = response.name;
