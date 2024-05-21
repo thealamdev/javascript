@@ -26,10 +26,6 @@
             ageDiv = document.querySelector('.age'),
             cgpaDiv = document.querySelector('.cgpa')
 
-        nameDiv.textContent = name;
-        ageDiv.textContent = age;
-        cgpaDiv.textContent = cgpa;
-
         const person = {
             name: name,
             age: age,
@@ -37,9 +33,14 @@
         }
 
         localStorage.setItem('person', JSON.stringify(person));
-        let response = localStorage.getItem('person');
-        console.log(JSON.parse(response))
+        let response = JSON.parse(localStorage.getItem('person'));
+        // console.log(JSON.parse(response))
 
+        document.addEventListener('DOMContentLoaded', (element) => {
+            nameDiv.textContent = response.name;
+            ageDiv.textContent = response.age;
+            cgpaDiv.textContent = response.cgpa;
+        })
     </script>
 </body>
 
