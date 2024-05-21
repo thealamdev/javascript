@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt & Object</title>
+</head>
+
+<div>
+    <h3 class="name"></h3>
+    <h3 class="age"></h3>
+    <h3 class="cgpa"></h3>
+</div>
+
+<body>
+
+
+    <script>
+        let name = prompt('Enter your name'),
+            age = prompt('Enter your age'),
+            cgpa = prompt('Enter your CGPA');
+
+
+        let nameDiv = document.querySelector('.name'),
+            ageDiv = document.querySelector('.age'),
+            cgpaDiv = document.querySelector('.cgpa')
+
+        nameDiv.textContent = name;
+        ageDiv.textContent = age;
+        cgpaDiv.textContent = cgpa;
+
+        const person = {
+            name: name,
+            age: age,
+            cgpa: cgpa
+        }
+
+        localStorage.setItem('person', JSON.stringify(person));
+        let response = localStorage.getItem('person');
+        console.log(JSON.parse(response))
+
+    </script>
+</body>
+
+</html>
