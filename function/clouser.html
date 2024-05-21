@@ -21,10 +21,22 @@
             }
         })()
 
-        
+
         console.dir(counter())
         console.dir(counter())
         console.dir(counter())
+
+
+         const myFun = (function() {
+            let counter = 1;
+
+            return function count() {
+                counter++;
+                return counter;
+            }
+        })()
+
+        console.dir(myFun())
     </script>
 </body>
 
