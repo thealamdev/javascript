@@ -40,8 +40,8 @@
         console.log(this)
 
         /*
-        * this in Event Handlers
-        */
+         * this in Event Handlers
+         */
         function getEvent(element) {
             alert(element);
         }
@@ -96,8 +96,10 @@
         let max = Math.max.apply("", numbers);
         console.log(max)
         let min = Math.min.apply("", numbers);
+        /*You can write this by ... following way*/
+        let minimum = Math.man.apply(Math, numbers);
+        console.log(minimum)
         console.log(min)
-
     </script>
 </body>
 
