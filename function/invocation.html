@@ -19,9 +19,13 @@
 
 
         let obj = new MyFun(3, 4);
-        // MyFun(3,5)
-         
-         
+
+        /*Self invocation*/
+        (function self() {
+            console.log('This is self invocation funtion');
+        })()
+
+
     </script>
 </body>
 
