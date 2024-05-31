@@ -5,4 +5,3 @@ let getDiagonals = () => {
 let getDiagonalSum = () => {
     console.log('getDiagonalSum method');
 }
-
